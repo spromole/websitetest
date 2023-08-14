@@ -149,3 +149,27 @@ nav ul li a:hover::after{
     color: rgb(255, 255, 255);
     font-family: calibri;
 }
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-family: calibri;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: pink;
+    position: absolute;
+    transition: .5s;
+    bottom: -8px;
+    left: 0;
+}
